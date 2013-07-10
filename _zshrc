@@ -1,0 +1,140 @@
+# Path to your oh-my-zsh configuration.
+ZSH=$HOME/.oh-my-zsh
+
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
+ZSH_THEME="robbyrussell"
+
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Set to this to use case-sensitive completion
+# CASE_SENSITIVE="true"
+
+# Comment this out to disable bi-weekly auto-update checks
+# DISABLE_AUTO_UPDATE="true"
+
+# Uncomment to change how often before auto-updates occur? (in days)
+# export UPDATE_ZSH_DAYS=13
+
+# Uncomment following line if you want to disable colors in ls
+# DISABLE_LS_COLORS="true"
+
+# Uncomment following line if you want to disable autosetting terminal title.
+# DISABLE_AUTO_TITLE="true"
+
+# Uncomment following line if you want to disable command autocorrection
+# DISABLE_CORRECTION="true"
+
+# Uncomment following line if you want red dots to be displayed while waiting for completion
+# COMPLETION_WAITING_DOTS="true"
+
+# Uncomment following line if you want to disable marking untracked files under
+# VCS as dirty. This makes repository status check for large repositories much,
+# much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
+
+# Customize to your needs...
+####################################yeer's personal settings###############################
+
+############################################################################################
+# Zsh related
+############################################################################################
+# Dont bother me for mistyping
+unsetopt correct_all
+# I love random
+ZSH_THEME="random"
+
+
+############################################################################################
+# Path related
+############################################################################################
+export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+export GOROOT=/usr/local/Cellar/go/1.1rc3/
+export GOPATH=$HOME/go
+export PATH=$PATH:$HOME/go/bin
+export PATH=$PATH:/usr/local/Cellar/macvim/7.3-64/bin
+export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH=$PATH:$HOME/.cabal/bin # Add cabal to PATH for haskell env
+export GAE_GOPATH=/User/yeer/go/src/google_appengine
+export PATH=$GAE_GOPATH:$PATH
+
+
+############################################################################################
+# Shell funtions
+############################################################################################
+function gtest(){
+   go test $1 -i && go test $1 -v
+ }
+
+
+############################################################################################
+# My alias
+############################################################################################
+# Network related
+alias fuckgfw="python ~/Dropbox/software/goAgent/local/proxy.py"
+alias fanqiang='ssh -qTfnN -D 127.0.0.1:7070 app@54.248.248.61'
+alias fqopenvpn='sudo vim ~/Library/Application\ Support/Tunnelblick/Configurations/yeer.ovpn '
+
+# Go coding alias
+alias gt="go test -i; go test ."
+alias gtr="go test -i; go test -test.run "
+alias gtf="go test -i; go test -gocheck.f "
+alias gtb="go test -i; go test -bench "
+alias gob='go build -gcflags "-N -l" main.go'
+alias grm="go run main.go"
+alias ta="./tests/run_all"
+alias t="tower"
+
+# MongoDB alias
+alias me="vim /usr/local/etc/mongod.conf"
+alias mul="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist"
+alias ml="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist"
+
+# Editor alias
+alias ee="/Users/yeer/src/macvim/src/MacVim/mvim"
+alias e="/Users/yeer/src/macvim/src/MacVim/build/Release/MacVim.app/Contents/MacOS/Vim"
+alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
+
+# Project alias
+alias qt="cd /Users/yeer/go/src/github.com/theplant/qortex"
+alias qta="cd /Users/yeer/go/src/github.com/theplant/qortexapi"
+alias gg="cd /Users/yeer/go/src/github.com/"
+alias et="cd /Users/yeer/go/src/bitbucket.org/evertips"
+alias tc="cd /Users/yeer/go/src/github.com/athom/thecarcle/"
+alias caicai="cd /Users/yeer/go/src/github.com/athom/caicai"
+alias jz="cd /Users/yeer/src/cjspython/1"
+alias mc="cd ~/.vim/bundle/more-colorful.vim"
+alias gae="cd /User/yeer/go/src/google_appengine"
+
+# Servers alias
+alias amz="ssh ubuntu@ec2-54-245-230-68.us-west-2.compute.amazonaws.com"
+alias sgp_amz="ssh ubuntu@ec2-54-251-200-16.ap-southeast-1.compute.amazonaws.com"
+alias qbuild="ssh build@54.248.248.61"
+alias qdev=" ssh ubuntu@qortex.theplant-dev.com"
+alias qcn=" ssh app@qortex.cn"
+alias qcom=" ssh app@qortex.com"
+alias qci="ssh -p 2222  ci@ci.theplant-dev.com"
+
+# ZSH alias
+alias ss="source ~/.zshrc"
+alias vs="vim ~/.zshrc"
+
+# Vim  alias
+alias v="vim ~/.vimrc"
+alias vv="cd ~/.vim"
+alias bi="vim +BundleInstall +qal"
+alias eb="vim ~/.vim/VundleFile"
+
+#Git alias
+alias gpr="git pull --rebase --no-ff"
