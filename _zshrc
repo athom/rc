@@ -139,3 +139,9 @@ alias eb="vim ~/.vim/VundleFile"
 
 #Git alias
 alias gpr="git pull --rebase --no-ff"
+
+# i18n workflow alias
+alias wl="./i18n/workflow localize"
+alias we="./i18n/workflow export"
+alias wi="./i18n/workflow import"
+alias wu="./i18n/workflow update"
