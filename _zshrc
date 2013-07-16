@@ -100,14 +100,21 @@ alias grm="go run main.go"
 alias ta="./tests/run_all"
 alias t="tower"
 
-# MongoDB alias
-alias me="vim /usr/local/etc/mongod.conf"
-alias mul="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist"
-alias ml="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist"
+# Services alias
+alias mge="vim /usr/local/etc/mongod.conf"
+alias mgu="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist"
+alias mgl="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist"
+alias sbe="vim ~/Library/LaunchAgents/com.qortex.senbetsu.plist"
+alias sbl="launchctl load ~/Library/LaunchAgents/com.qortex.senbetsu.plist"
+alias sbu="launchctl unload ~/Library/LaunchAgents/com.qortex.senbetsu.plist"
+alias rde="vim /usr/local/etc/redis.conf"
+alias rdl="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.redis.plist"
+alias rdu="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.redis.plist"
 
 # Editor alias
-alias ee="/Users/yeer/src/macvim/src/MacVim/mvim"
+#alias ee="/Users/yeer/src/macvim/src/MacVim/mvim"
 alias e="/Users/yeer/src/macvim/src/MacVim/build/Release/MacVim.app/Contents/MacOS/Vim"
+alias ee="/Users/yeer/src/macvim/src/MacVim/build/Release/MacVim.app/Contents/MacOS/Vim -g"
 alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 
 # Project alias
@@ -148,3 +155,5 @@ alias wl="./i18n/workflow localize"
 alias we="./i18n/workflow export"
 alias wi="./i18n/workflow import"
 alias wu="./i18n/workflow update"
+alias wcl="./i18n/workflow cleanup"
+
