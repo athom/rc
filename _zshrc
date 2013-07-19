@@ -127,6 +127,7 @@ alias caicai="cd /Users/yeer/go/src/github.com/athom/caicai"
 alias jz="cd /Users/yeer/src/cjspython/1"
 alias mc="cd ~/.vim/bundle/more-colorful.vim"
 alias gae="cd /User/yeer/go/src/google_appengine"
+alias qadmin="cd /Users/yeer/go/src/github.com/kobeld/qortexadmin"
 
 # Servers alias
 alias amz="ssh ubuntu@ec2-54-245-230-68.us-west-2.compute.amazonaws.com"
