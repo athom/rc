@@ -88,7 +88,7 @@ acf() {
 # Network related
 alias fuckgfw="python ~/Dropbox/software/goAgent/local/proxy.py"
 alias fanqiang='ssh -qTfnN -D 127.0.0.1:7070 app@54.248.248.61'
-alias fqopenvpn='sudo vim ~/Library/Application\ Support/Tunnelblick/Configurations/yeer.ovpn '
+alias fqopenvpn='sudo e ~/Library/Application\ Support/Tunnelblick/Configurations/yeer.ovpn '
 
 # Go coding alias
 alias gt="go test -i; go test ."
@@ -101,18 +101,19 @@ alias ta="./tests/run_all"
 alias t="tower"
 
 # Services alias
-alias mge="vim /usr/local/etc/mongod.conf"
+alias mge="e /usr/local/etc/mongod.conf"
 alias mgu="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist"
 alias mgl="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist"
-alias sbe="vim ~/Library/LaunchAgents/com.qortex.senbetsu.plist"
+alias sbe="e ~/Library/LaunchAgents/com.qortex.senbetsu.plist"
 alias sbl="launchctl load ~/Library/LaunchAgents/com.qortex.senbetsu.plist"
 alias sbu="launchctl unload ~/Library/LaunchAgents/com.qortex.senbetsu.plist"
-alias rde="vim /usr/local/etc/redis.conf"
+alias rde="e /usr/local/etc/redis.conf"
 alias rdl="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.redis.plist"
 alias rdu="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.redis.plist"
 
 # Editor alias
 #alias ee="/Users/yeer/src/macvim/src/MacVim/mvim"
+alias vim="/Users/yeer/src/macvim/src/MacVim/build/Release/MacVim.app/Contents/MacOS/Vim"
 alias e="/Users/yeer/src/macvim/src/MacVim/build/Release/MacVim.app/Contents/MacOS/Vim"
 alias ee="/Users/yeer/src/macvim/src/MacVim/build/Release/MacVim.app/Contents/MacOS/Vim -g"
 alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
@@ -128,6 +129,7 @@ alias jz="cd /Users/yeer/src/cjspython/1"
 alias mc="cd ~/.vim/bundle/more-colorful.vim"
 alias gae="cd /User/yeer/go/src/google_appengine"
 alias qadmin="cd /Users/yeer/go/src/github.com/kobeld/qortexadmin"
+alias blf="cd /Users/yeer/go/src/github.com/russross/blackfriday"
 
 # Servers alias
 alias amz="ssh ubuntu@ec2-54-245-230-68.us-west-2.compute.amazonaws.com"
@@ -140,13 +142,13 @@ alias qci="ssh -p 2222  ci@ci.theplant-dev.com"
 
 # ZSH alias
 alias ss="source ~/.zshrc"
-alias vs="vim ~/.zshrc"
+alias vs="e ~/.zshrc"
 
 # Vim  alias
-alias v="vim ~/.vimrc"
+alias v="e ~/.vimrc"
 alias vv="cd ~/.vim"
-alias bi="vim +BundleInstall +qal"
-alias eb="vim ~/.vim/VundleFile"
+alias bi="e +BundleInstall +qal"
+alias eb="e ~/.vim/VundleFile"
 
 #Git alias
 alias gpr="git pull --rebase --no-ff"
