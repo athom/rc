@@ -90,6 +90,9 @@ alias fuckgfw="python ~/Dropbox/software/goAgent/local/proxy.py"
 alias fanqiang='ssh -qTfnN -D 127.0.0.1:7070 app@54.248.248.61'
 alias fqopenvpn='sudo e ~/Library/Application\ Support/Tunnelblick/Configurations/yeer.ovpn '
 
+# C/C++ code alias
+alias cm="./configure && make"
+
 # Go coding alias
 alias gt="go test -i; go test ."
 alias gtr="go test -i; go test -test.run "
