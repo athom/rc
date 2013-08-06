@@ -133,6 +133,7 @@ alias mc="cd ~/.vim/bundle/more-colorful.vim"
 alias gae="cd /User/yeer/go/src/google_appengine"
 alias qadmin="cd /Users/yeer/go/src/github.com/kobeld/qortexadmin"
 alias blf="cd /Users/yeer/go/src/github.com/russross/blackfriday"
+alias rcj="cd ~/go/src/github.com/athom/rcssim2D.js"
 
 # Servers alias
 alias amz="ssh ubuntu@ec2-54-245-230-68.us-west-2.compute.amazonaws.com"
@@ -155,6 +156,8 @@ alias eb="e ~/.vim/VundleFile"
 
 #Git alias
 alias gpr="git pull --rebase --no-ff"
+alias ts="tig status"
+alias tb="tig blame"
 
 # i18n workflow alias
 alias wl="./i18n/workflow localize"
