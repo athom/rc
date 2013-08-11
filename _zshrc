@@ -167,7 +167,7 @@ alias wu="./i18n/workflow update"
 alias wcl="./i18n/workflow cleanup"
 
 # Ruby related 
-alias gh="cd $GEM_HOME/gems"
+alias gh="cd /Users/yeer/.rvm/gems/ruby-2.0.0-p247/gems"
 
 # Chrome Extestions
 alias cex="cd cd ~/Library/Application\ Support/Google/Chrome/Default/Extensions/"

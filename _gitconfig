@@ -1,0 +1,15 @@
+[user]
+	name = athom
+	email = athom@126.com
+[core]
+	editor = /Users/yeer/src/macvim/src/MacVim/build/Release/MacVim.app/Contents/MacOS/Vim
+[alias]
+	st = status
+	ci = commit
+	df = diff
+	co = checkout
+	br = branch
+[color]
+	ui = true
+[push]
+	default = current
