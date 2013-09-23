@@ -116,7 +116,7 @@ alias rdu="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.redis.plist"
 
 # Editor alias
 #alias ee="/Users/yeer/src/macvim/src/MacVim/mvim"
-alias vim="/Users/yeer/src/macvim/src/MacVim/build/Release/MacVim.app/Contents/MacOS/Vim"
+#alias vim="/Users/yeer/src/macvim/src/MacVim/build/Release/MacVim.app/Contents/MacOS/Vim"
 alias e="/Users/yeer/src/macvim/src/MacVim/build/Release/MacVim.app/Contents/MacOS/Vim"
 alias ee="/Users/yeer/src/macvim/src/MacVim/build/Release/MacVim.app/Contents/MacOS/Vim -g"
 alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
@@ -134,15 +134,17 @@ alias gae="cd /User/yeer/go/src/google_appengine"
 alias qadmin="cd /Users/yeer/go/src/github.com/kobeld/qortexadmin"
 alias blf="cd /Users/yeer/go/src/github.com/russross/blackfriday"
 alias rcj="cd ~/go/src/github.com/athom/rcssim2D.js"
+alias bf="cd /Users/yeer/go/src/github.com/athom/balloonfish"
 
 # Servers alias
 alias amz="ssh ubuntu@ec2-54-245-230-68.us-west-2.compute.amazonaws.com"
 alias sgp_amz="ssh ubuntu@ec2-54-251-200-16.ap-southeast-1.compute.amazonaws.com"
 alias qbuild="ssh build@54.248.248.61"
-alias qdev=" ssh ubuntu@qortex.theplant-dev.com"
+alias qdev="ssh app@qortex.theplant-dev.com"
 alias qcn=" ssh app@qortex.cn"
 alias qcom=" ssh app@qortex.com"
 alias qci="ssh -p 2222  ci@ci.theplant-dev.com"
+alias qingyun="ssh -i ~/.ssh/qing-yun.pem root@117.121.25.63"
 
 # ZSH alias
 alias ss="source ~/.zshrc"
@@ -164,6 +166,7 @@ alias wl="./i18n/workflow localize"
 alias we="./i18n/workflow export"
 alias wi="./i18n/workflow import"
 alias wu="./i18n/workflow update"
+alias wv="./i18n/workflow validate"
 alias wcl="./i18n/workflow cleanup"
 
 # Ruby related 
