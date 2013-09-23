@@ -115,26 +115,26 @@ alias rdl="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.redis.plist"
 alias rdu="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.redis.plist"
 
 # Editor alias
-#alias ee="/Users/yeer/src/macvim/src/MacVim/mvim"
-#alias vim="/Users/yeer/src/macvim/src/MacVim/build/Release/MacVim.app/Contents/MacOS/Vim"
-alias e="/Users/yeer/src/macvim/src/MacVim/build/Release/MacVim.app/Contents/MacOS/Vim"
-alias ee="/Users/yeer/src/macvim/src/MacVim/build/Release/MacVim.app/Contents/MacOS/Vim -g"
+#alias ee="~/src/macvim/src/MacVim/mvim"
+#alias vim="~/src/macvim/src/MacVim/build/Release/MacVim.app/Contents/MacOS/Vim"
+alias e="~/src/macvim/src/MacVim/build/Release/MacVim.app/Contents/MacOS/Vim"
+alias ee="~/src/macvim/src/MacVim/build/Release/MacVim.app/Contents/MacOS/Vim -g"
 alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 
 # Project alias
-alias qt="cd /Users/yeer/go/src/github.com/theplant/qortex"
-alias qta="cd /Users/yeer/go/src/github.com/theplant/qortexapi"
-alias gg="cd /Users/yeer/go/src/github.com/"
-alias et="cd /Users/yeer/go/src/bitbucket.org/evertips"
-alias tc="cd /Users/yeer/go/src/github.com/athom/thecarcle/"
-alias caicai="cd /Users/yeer/go/src/github.com/athom/caicai"
-alias jz="cd /Users/yeer/src/cjspython/1"
+alias qt="cd ~/go/src/github.com/theplant/qortex"
+alias qta="cd ~/go/src/github.com/theplant/qortexapi"
+alias gg="cd ~/go/src/github.com/"
+alias et="cd ~/go/src/bitbucket.org/evertips"
+alias tc="cd ~/go/src/github.com/athom/thecarcle/"
+alias caicai="cd ~/go/src/github.com/athom/caicai"
+alias jz="cd ~/src/cjspython/1"
 alias mc="cd ~/.vim/bundle/more-colorful.vim"
 alias gae="cd /User/yeer/go/src/google_appengine"
-alias qadmin="cd /Users/yeer/go/src/github.com/kobeld/qortexadmin"
-alias blf="cd /Users/yeer/go/src/github.com/russross/blackfriday"
+alias qadmin="cd ~/go/src/github.com/kobeld/qortexadmin"
+alias blf="cd ~/go/src/github.com/russross/blackfriday"
 alias rcj="cd ~/go/src/github.com/athom/rcssim2D.js"
-alias bf="cd /Users/yeer/go/src/github.com/athom/balloonfish"
+alias bf="cd ~/go/src/github.com/athom/balloonfish"
 
 # Servers alias
 alias amz="ssh ubuntu@ec2-54-245-230-68.us-west-2.compute.amazonaws.com"
@@ -170,7 +170,7 @@ alias wv="./i18n/workflow validate"
 alias wcl="./i18n/workflow cleanup"
 
 # Ruby related 
-alias gh="cd /Users/yeer/.rvm/gems/ruby-2.0.0-p247/gems"
+alias gh="cd ~/.rvm/gems/ruby-2.0.0-p247/gems"
 
 # Chrome Extestions
 alias cex="cd cd ~/Library/Application\ Support/Google/Chrome/Default/Extensions/"
