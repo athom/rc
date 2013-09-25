@@ -61,7 +61,7 @@ ZSH_THEME="random"
 # Path related
 ############################################################################################
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
-export GOROOT=/usr/local/Cellar/go/1.2.rc1/libexec
+export GOROOT=/usr/local/Cellar/go/1.2rc1/libexec
 export GOPATH=$HOME/go
 export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:/usr/local/Cellar/macvim/7.3-64/bin
