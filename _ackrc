@@ -20,6 +20,9 @@
 --ignore-dir=.idea/
 --ignore-dir=node_modules/
 --ignore-file=is:tags
+--ignore-file=is:cscope.file
+--ignore-file=is:cscope.out
+--ignore-file=is:.gitignore
 
 #make sure ack knows how to search common filetypes used in rails projects
 --type-add=css=scss

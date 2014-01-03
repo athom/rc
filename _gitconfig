@@ -6,10 +6,15 @@
 [alias]
 	st = status
 	ci = commit
+        cm = commit -m
+        ca = commit --amend
+        cn = commit --amend --no-edit
 	df = diff
 	co = checkout
 	br = branch
 [color]
 	ui = true
 [push]
+	default = current
+[pull]
 	default = current

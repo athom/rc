@@ -40,8 +40,8 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-#plugins=(git)
-plugins=(git ruby gem go cabal lighthouse ack)
+plugins=(git)
+#plugins=(git ruby gem cabal lighthouse ack)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -61,7 +61,7 @@ ZSH_THEME="random"
 # Path related
 ############################################################################################
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
-export GOROOT=/usr/local/Cellar/go/1.1.2/libexec
+export GOROOT=/usr/local/Cellar/go/1.2/libexec
 export GOPATH=$HOME/go
 export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:/usr/local/Cellar/macvim/7.3-64/bin
@@ -69,6 +69,8 @@ export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export PATH=$PATH:$HOME/.cabal/bin # Add cabal to PATH for haskell env
 export GAE_GOPATH=/User/yeer/go/src/google_appengine
 export PATH=$GAE_GOPATH:$PATH
+export PATH=/Developer/NVIDIA/CUDA-5.5/bin:$PATH
+export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-5.5/lib:$DYLD_LIBRARY_PATH
 
 
 ############################################################################################
@@ -135,6 +137,7 @@ alias qadmin="cd ~/go/src/github.com/kobeld/qortexadmin"
 alias blf="cd ~/go/src/github.com/russross/blackfriday"
 alias rcj="cd ~/go/src/github.com/athom/rcssim2D.js"
 alias bf="cd ~/go/src/github.com/athom/balloonfish"
+alias puq="pak update qortexapi"
 
 # Servers alias
 alias amz="ssh ubuntu@ec2-54-245-230-68.us-west-2.compute.amazonaws.com"
@@ -156,6 +159,9 @@ alias vv="cd ~/.vim"
 alias bi="e +BundleInstall +qal"
 alias eb="e ~/.vim/VundleFile"
 
+#Haskell alias
+#alias cabal="~./cabal/bin/cabal"
+
 #Git alias
 alias gpr="git pull --rebase --no-ff"
 alias ts="tig status"
@@ -168,9 +174,14 @@ alias wi="./i18n/workflow import"
 alias wu="./i18n/workflow update"
 alias wv="./i18n/workflow validate"
 alias wcl="./i18n/workflow cleanup"
+alias wck="./i18n/workflow cleankey"
 
 # Ruby related 
 alias gh="cd ~/.rvm/gems/ruby-2.0.0-p247/gems"
 
 # Chrome Extestions
 alias cex="cd cd ~/Library/Application\ Support/Google/Chrome/Default/Extensions/"
+
+
+# For AutoJump[https://github.com/joelthelion/autojump]
+source /usr/local/etc/autojump.zsh
