@@ -12,6 +12,9 @@
 	df = diff
 	co = checkout
 	br = branch
+        pr = pull --rebase
+
+        deleted = log --diff-filter=D --summary
 [color]
 	ui = true
 [push]
