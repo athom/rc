@@ -88,12 +88,6 @@ export PATH=$GAE_GOPATH:$PATH
 #export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-5.5/lib:$DYLD_LIBRARY_PATH
 #export C_INCLUDE_PATH=/usr/local/cuda/include:$C_INCLUDE_PATH
 
-############################################################################################
-# Docker
-############################################################################################
-export DOCKER_HOST=tcp://192.168.59.103:2376
-export DOCKER_CERT_PATH=/Users/yeer/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
 
 
 ############################################################################################
@@ -170,20 +164,21 @@ alias blf="cd ~/go/src/github.com/russross/blackfriday"
 alias rcj="cd ~/go/src/github.com/athom/rcssim2D.js"
 alias bf="cd ~/go/src/github.com/athom/balloonfish"
 alias puq="pak update qortexapi"
-alias wr='git log --author=athom --pretty="- %s (%H)"'
+alias wr='git log --after="yesterday" --author=athom --pretty="- %s (%H)"'
 alias gv='goconvey -port=7070'
 
 # Servers alias
 alias amz="ssh ubuntu@ec2-54-214-147-132.us-west-2.compute.amazonaws.com"
-alias sgp_amz="ssh ubuntu@ec2-175-41-178-207.ap-southeast-1.compute.amazonaws.com"
+alias sgp_amz="ssh ubuntu@ec2-52-74-37-229.ap-southeast-1.compute.amazonaws.com"
 alias do_sgp_debian="ssh root@128.199.176.114"
 alias do_sgp_ubuntu="ssh root@128.199.165.111"
 alias tokyo_amz="ssh ubuntu@ec2-54-92-15-121.ap-northeast-1.compute.amazonaws.com"
 alias tokyo_amz2="ssh ubuntu@ec2-54-65-78-87.ap-northeast-1.compute.amazonaws.com"
+alias tokyo_amz2_auto="autossh -M `gshuf -i 20000-64000 -n 1` ubuntu@ec2-54-65-78-87.ap-northeast-1.compute.amazonaws.com"
 #alias tokyo_amz32="ssh ubuntu@ec2-52-68-47-165.ap-northeast-1.compute.amazonaws.com"
 alias qbuild="ssh build@54.248.248.61"
 alias qdev="autossh -M `gshuf -i 20000-64000 -n 1` app@qortex.theplant-dev.com"
-alias tokyo_amz32="autossh -M `gshuf -i 20000-64000 -n 1` ubuntu@ec2-52-68-47-165.ap-northeast-1.compute.amazonaws.com"
+alias tokyo_amz32="autossh -M `gshuf -i 20000-64000 -n 1` ubuntu@ec2-52-69-3-74.ap-northeast-1.compute.amazonaws.com"
 alias qcn=" ssh app@qortex.cn"
 alias qcom=" ssh app@qortex.com"
 alias qci="ssh -p 2222  ci@ci.theplant-dev.com"
@@ -238,3 +233,17 @@ alias cex="cd cd ~/Library/Application\ Support/Google/Chrome/Default/Extensions
 
 # For AutoJump[https://github.com/joelthelion/autojump]
 source /usr/local/etc/autojump.zsh
+
+############################################################################################
+# Docker
+############################################################################################
+alias bu="boot2docker up"
+alias bd="boot2docker down"
+alias bs="boot2docker ssh"
+alias dklf="docker logs -f"
+alias dp="docker ps"
+alias dr="docker rm"
+alias drf="docker rm -f"
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/yeer/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
